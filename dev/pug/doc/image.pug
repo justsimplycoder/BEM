@@ -1,0 +1,18 @@
+extends layout.pug
+
+block content
+	h1 Работа с изображениями
+
+	h2 Слайдер swiper
+
+	section
+		.swiper.l-swiper
+			.swiper-wrapper
+				.swiper-slide: img(src="http://placeimg.com/1000/340/any/grayscale", alt="")
+				.swiper-slide: img(src="http://placeimg.com/1000/340/nature/sepia", alt="")
+				.swiper-slide: img(src="http://placeimg.com/1000/340/tech", alt="")
+			.swiper-pagination
+			.swiper-button-prev
+			.swiper-button-next
+			.swiper-scrollbar
+

@@ -1,0 +1,40 @@
+extends layout.pug
+
+block content
+	h1 Иконки
+
+	h2 Модуль .icon - png icon
+	div
+		span.icon.icon-Char
+		| .icon.icon-Char
+	div
+		span.icon.icon-Mail
+		| .icon.icon-Mail
+	div
+		span.icon.icon-RU
+		| .icon.icon-RU
+	div
+		span.icon.icon-US
+		| .icon.icon-US
+
+	h2 Модуль .iconsvg
+	div
+		div.iconsvg(style="fill:blue;")
+			include ../../img/iconsvg/star-fill.svg
+		div.iconsvg.t-large(style="fill:green;")
+			include ../../img/iconsvg/html.svg
+
+	h2 Модуль CSS Arrows
+	div
+		p
+			| .arrow.t-right:
+			i.arrow.t-right
+		p
+			| .arrow.t-left:
+			i.arrow.t-left
+		p
+			| .arrow.t-up:
+			i.arrow.t-up
+		p
+			| .arrow.t-down:
+			i.arrow.t-down
