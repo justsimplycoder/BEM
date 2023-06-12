@@ -10,20 +10,20 @@
 	height var(--size)
 	display: inline-block
 	position relative
-	&.t-right
+	&--theme-right
 		transform: rotate(-45deg)
-	&.t-left
+	&--theme-left
 		transform: rotate(135deg)
 		margin-left: calc(var(--size) / 2)
-	&.t-up
+	&--theme-up
 		transform: rotate(-135deg)
 		margin-left: calc(var(--size) / 2)
 		top calc(var(--size) / 3)
-	&.t-down
+	&--theme-down
 		transform: rotate(45deg)
 		margin-left: calc(var(--size) / 2)
 		bottom calc(var(--size) / 3)
-	&__theme-top-page
+	&--theme-top-page
 		--size: 24px
 		transform: rotate(-135deg)
 		display block
