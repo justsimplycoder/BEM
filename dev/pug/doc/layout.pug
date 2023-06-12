@@ -20,48 +20,50 @@ html(lang="ru")
 
 		block top-script
 
-	body
-		header#l-header
-			#l-header-menu
-				.l-page-width
+	body.page
+		header.header#link-header
+			.header__menu
+				.page__wrap
 					+nav(nav)
 					span.hamburger
-			#l-header-title
-				.l-page-width
+			.header__title
+				.header__images.page__wrap
 					img(src="/img/logo.svg", alt="Логотип", width="200")
 					img(src="/img/logo2.svg", alt="Логотип", width="200")
 					img(src="/img/logo3.svg", alt="Логотип", width="200")
-			#l-header-breadcrumb
-				.l-page-width
+			.header__breadcrumb
+				.page__wrap
 					+breadcrumb(breadcrumbs)
-		// /header#l-header
 
-		#l-content
-			.l-page-width
+		.page__content
+			.page__wrap
 				block content
 
-		footer#l-footer
-			.l-page-width
-				div
-					a(href='http://vk.com/modxrevolution').socicons
-					a(href='https://www.facebook.com/groups/modxrevolution/').socicons
-					a(href='http://twitter.com/@viktorminator').socicons
-					a(href='https://github.com/dzendev/smacss').socicons
-					a(href='skype:viktorminator?chat&topic=MODX уроки').socicons
-				address
+		footer.footer
+			.footer__info.page__wrap
+				ul.footer__socicons
+					li: a(href='http://vk.com/modxrevolution').iconsvg
+						include ../../img/iconsvg/logo-vk.svg
+					li: a(href='https://www.facebook.com/groups/modxrevolution/').iconsvg
+						include ../../img/iconsvg/logo-vk.svg
+					li: a(href='http://twitter.com/@viktorminator').iconsvg
+						include ../../img/iconsvg/logo-vk.svg
+					li: a(href='https://github.com/dzendev/smacss').iconsvg
+						include ../../img/iconsvg/logo-vk.svg
+					li: a(href='skype:viktorminator?chat&topic=MODX уроки').iconsvg
+						include ../../img/iconsvg/logo-vk.svg
+				address.footer__address
 					b Twitter, Inc.<br>
 					| Francisco, CA 94103<br>
 					| 1355 Market Street, Suite 900<br>
-					abbr(title="Phone") P:
-					| &nbsp;(123) 456-7890
-				address
+					abbr(title="Phone") Тел: &nbsp;(123) 456-7890
+				address.footer__email
 					b Full Name<br>
 					a(href="mailto:FullName@gmail.com") FullName@gmail.com
-					p(role="contentinfo") Сайт сделан
-		// /footer#l-footer
 
-		a(href="#l-header")#l-top-scroll
-			i.arrow.t-up
+
+		a(href="#link-header").page__top-scroll
+			i.arrow.arrow__theme-top-page
 
 		block bottom-script
 			script(src="/js/swiper-bundle.min.js")

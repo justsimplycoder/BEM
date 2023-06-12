@@ -20,27 +20,24 @@ html(lang="ru")
 
 		block top-script
 
-	body
-		header#l-header
-			#l-header-menu
-				.l-page-width
+	body.page
+		header.header
+			.header__menu
+				.page__wrap
 					+nav(nav)
 					span.hamburger
-			#l-header-title
-				.l-page-width
+			.header__title
+				.header__images.page__wrap
 					img(src="/img/logo.svg", alt="Логотип", width="200")
 					img(src="/img/logo2.svg", alt="Логотип", width="200")
 					img(src="/img/logo3.svg", alt="Логотип", width="200")
-		// /header#l-header
 
-		#l-content
-			.l-page-width
+		.page__content
+			.page__wrap
 				block content
-		// /#l-content
 
-		footer#l-footer
-			.l-page-width.b-text-center(style="display:block") Copyright <a href="https://github.com/justsimplycoder/BEM">justsimplycoder GitHub</a>
-		// /footer#l-footer
+		footer.footer
+			.footer__copyright.page__wrap Copyright <a href="https://github.com/justsimplycoder/BEM">justsimplycoder GitHub</a>
 
 		block bottom-script
 			script(src="/js/swiper-bundle.min.js")
