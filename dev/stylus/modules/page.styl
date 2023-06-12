@@ -1,18 +1,21 @@
 /*!-----------------------------------------------------------------
 	.page - модуль отвечающий за разметку страницы
  -----------------------------------------------------------------*/
-// прижатый футер к низу
-// html, body
-// 	height: 100%
-// body
-	// display: flex
-	// min-height: 100vh
-	// // исправление возможного бага с прижатым футером в мобильной версии
-	// min-height: -webkit-fill-available
-	// flex-direction: column
-	// padding-bottom 0
+*
+*:before
+*:after
+	box-sizing border-box
+html
+	scroll-behavior: smooth
+html, body
+	height: 100%
+body
+	display: flex
+	min-height: 100vh
+	// исправление возможного бага с прижатым футером в мобильной версии
+	min-height: -webkit-fill-available
+	flex-direction: column
 
-// отступ в центре страницы и максимальная ширина
 .page
 	display: flex
 	flex-direction: column
@@ -43,4 +46,5 @@
 		align-items center
 		&:hover
 			color #fff
-
+	&__404
+		text-align center
