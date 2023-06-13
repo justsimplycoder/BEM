@@ -134,8 +134,12 @@ block content
 		div
 			h2 .btn
 			div(style="padding-bottom:20px;")
-				p: button.btn Кнопка &lt;button&gt;
-				p: a.btn Кнопка &lt;a&gt;
+				p
+					button.btn Обычная &lt;button&gt;
+					button(disabled="disabled").btn disable &lt;button&gt;
+				p
+					a.btn Обычная &lt;a&gt;
+					a.btn.btn--disabled disable &lt;a&gt;
 		div
 			h2 .switch — модуль кастомных checkbox и radio
 

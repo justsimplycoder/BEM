@@ -7,18 +7,18 @@
 	text-decoration none
 	display: inline-block
 	font-weight: normal
-	line-height: 1.25
 	text-align: center
 	white-space: nowrap
 	user-select: none
 	border: 1px solid transparent
 	padding 8px 12px
-	font-size: 1rem
+	font-size: 16px
+	line-height: 1.25
 	transition: all 0.2s ease-in-out
 	color: var(--colorBlack)
 	background-color var(--colorGray)
 
-	&.t-disable
+	&--disabled
 	&[disabled]
 		opacity .65
 		cursor default
@@ -28,5 +28,3 @@
 	&:focus, &:hover
 		text-decoration: none
 		color: var(--colorBlack)
-	a&
-		margin-right .25rem
