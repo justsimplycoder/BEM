@@ -24,13 +24,23 @@ html(lang="ru")
 		header.header#link-header
 			.header__menu
 				.page__wrap
-					+nav(nav)
-					span.hamburger
+					//- +nav(nav)
+					nav.menu
+						span.menu__hamburger
+						ul.menu__lists
+							li.menu__item: a(href="/doc/").menu__link Что такое?
+							li.menu__item: a(href="typography.html").menu__link Типографика
+							li.menu__item: a(href="message.html").menu__link Сообщения
+							li.menu__item: a(href="form.html").menu__link Формы
+							li.menu__item: a(href="icon.html").menu__link Иконки
+							li.menu__item: a(href="navigation.html").menu__link Навигация
+							li.menu__item: a(href="image.html").menu__link Изображения
+					//- span.hamburger
 			.header__title
 				.header__images.page__wrap
-					img(src="/img/logo.svg", alt="Логотип", width="200")
-					img(src="/img/logo2.svg", alt="Логотип", width="200")
-					img(src="/img/logo3.svg", alt="Логотип", width="200")
+					img(src="/img/logo.svg", alt="Логотип БЭМ").header__img
+					img(src="/img/logo2.svg", alt="Логотип БЭМ").header__img
+					img(src="/img/logo3.svg", alt="Логотип БЭМ").header__img
 			.header__breadcrumb
 				.page__wrap
 					+breadcrumb(breadcrumbs)
