@@ -8,7 +8,7 @@ block content
 	main.jumbotron
 		h2.jumbotron__header Модуль .jumbotron
 		p.jumbotron__text Необходим для демонстрации ключевого содержимого сайта
-		a(href="/" class="jumbotron__link btn t-primary") Вернуться на главную
+		a(href="/" class="jumbotron__link btn") Вернуться на главную
 
 	h3 Модуль предупреждения
 
@@ -31,20 +31,20 @@ block content
 	h3 Модуль выноска
 
 	.callout
-		h4 .callout default
-		p Случайный текст выноски.
-	.callout.t-danger
-		h4 .callout.t-danger
-		p Случайный текст выноски.
-	.callout.t-success
-		h4 .callout.t-success
-		p Случайный текст выноски.
-	.callout.t-warning
-		h4 .callout.t-warning
-		p Случайный текст выноски.
-	.callout.t-info
-		h4 .callout.is-info
-		p Случайный текст выноски.
+		h4.callout__title .callout default
+		p.callout__text Случайный текст выноски.
+	.callout.callout--theme-danger
+		h4.callout__title .callout.callout--theme-danger
+		p.callout__text Случайный текст выноски.
+	.callout.callout--theme-success
+		h4.callout__title .callout.callout--theme-success
+		p.callout__text Случайный текст выноски.
+	.callout.callout--theme-warning
+		h4.callout__title .callout.callout--theme-warning
+		p.callout__text Случайный текст выноски.
+	.callout.callout--theme-info
+		h4.callout__title .callout.callout--theme-info
+		p.callout__text Случайный текст выноски.
 
 	h3 Модуль тултип
 
