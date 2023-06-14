@@ -24,18 +24,12 @@ html(lang="ru")
 		header.header
 			.header__menu
 				.page__wrap
-					//- +nav(nav)
-					//- span.hamburger
 					nav.menu
-						span.menu__hamburger
+						.hamburger: .hamburger__line
 						ul.menu__lists
-							li.menu__item: a(href="/doc/").menu__link Что такое?
-							li.menu__item: a(href="typography.html").menu__link Типографика
-							li.menu__item: a(href="message.html").menu__link Сообщения
-							li.menu__item: a(href="form.html").menu__link Формы
-							li.menu__item: a(href="icon.html").menu__link Иконки
-							li.menu__item: a(href="navigation.html").menu__link Навигация
-							li.menu__item: a(href="image.html").menu__link Изображения
+							li.menu__item: a(href="/").menu__link Главная
+							li.menu__item: a(href="/doc/").menu__link Документация
+							li.menu__item: a(href="404.html").menu__link 404
 			.header__title
 				.header__images.page__wrap
 					img(src="/img/logo.svg", alt="Логотип БЭМ").header__img

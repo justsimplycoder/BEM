@@ -1,18 +1,8 @@
-import test from './modules/test.js'
+import menu from './modules/menu.js'
 
-test();
+menu();
 
 (function() {
-	// Модуль .hamburger
-	const hamburger = document.querySelector('.hamburger');
-	const nav = document.querySelector('.nav');
-	hamburger.addEventListener('click', function (event) {
-		event.preventDefault();
-		event.target.classList.toggle('fa-bars');
-		event.target.classList.toggle('fa-times');
-		nav.classList.toggle('is-show');
-	});
-
 	// Модуль .tab
 	function tabHandler(tab) {
 		const tabLink = tab.querySelector('.tab__links');
