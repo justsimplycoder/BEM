@@ -6,11 +6,12 @@ block content
 	h3 Модуль пагинации
 
 	nav.pagination
-		a(href="prev").is-disabled Previous
-		a(href="1").is-active 1
-		a(href="2") 2
-		a(href="3") 3
-		a(href="next") Next
+		ul.pagination__lists
+			li.pagination__item: a(href="prev").pagination__link.pagination__link--is-disabled Previous
+			li.pagination__item: a(href="1").pagination__link.pagination__link--is-active 1
+			li.pagination__item: a(href="2").pagination__link 2
+			li.pagination__item: a(href="3").pagination__link 3
+			li.pagination__item: a(href="next").pagination__link Next
 
 	h3 Модуль табы
 
