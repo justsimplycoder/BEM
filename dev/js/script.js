@@ -1,28 +1,11 @@
 import menu from './modules/menu.js'
+import tab from './modules/tab.js'
 
 menu();
+tab();
 
 (function() {
-	// Модуль .tab
-	function tabHandler(tab) {
-		const tabLink = tab.querySelector('.tab__links');
-		const tabItem = tab.querySelectorAll('.tab__item');
-		const tabContent = tab.querySelectorAll('.tab__content');
-		tabLink.onclick = function (event) {
-			event.preventDefault();
-			let item = event.target.closest('.tab__item');
-			if (!item) return;
-			tabItem.forEach((el) => el.classList.remove('is-active'));
-			tabContent.forEach((el) => el.classList.remove('is-show'));
-			item.classList.add('is-active');
-			let indexContent = event.target.dataset.showContent;
-			tabContent[indexContent].classList.add('is-show');
-		};
-	}
-	const tabs = document.querySelectorAll('.tab');
-	if(tabs.length != 0) {
-		tabs.forEach(tabHandler);
-	}
+
 
 	// Модуль .alert
 	function alertHandler(close) {
