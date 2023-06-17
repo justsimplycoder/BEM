@@ -130,14 +130,17 @@ async function spritePng() {
 function jsDev() {
 	return (
 		gulp
-			.src("dev/js/**/*.js", { sourcemaps: true })
+			.src("dev/js/script.js")
 			.pipe(plumberNotifier())
-			.pipe(babel({
-				"presets": [["@babel/preset-env", { modules: false }]],
-			}))
-			.pipe(pipeIf(env === "production", uglify()))
-			.pipe(pipeIf(env === "production", rename({ suffix: ".min" })))
-			.pipe(gulp.dest("build/js"))
+			.pipe(
+				webpack({
+					mode: env,
+					output: {
+						filename: 'script.js',
+					},
+				})
+			)
+			.pipe(gulp.dest('build/js'))
 			.pipe(browserSync.reload({ stream: true }))
 	);
 }
