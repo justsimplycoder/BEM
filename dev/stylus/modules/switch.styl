@@ -6,7 +6,7 @@
 	display: flex
 	align-items center
 	height: 34px
-	margin-bottom 15px
+	width max-content;
 	input
 		display none
 		&:checked + ^[0]__slider
@@ -19,7 +19,6 @@
 		&:checked + ^[0]__slider
 		&:checked ~ ^[0]__text
 			cursor default
-
 	&__slider
 		width: 60px
 		height 34px
@@ -36,7 +35,7 @@
 			bottom: 4px
 			background-color: #fff
 			transition: .4s
-		&.t-secondary
+		&--theme-secondary
 			border-radius: 34px
 			&:before
 				border-radius: 50%
