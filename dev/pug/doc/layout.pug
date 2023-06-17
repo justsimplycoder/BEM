@@ -1,6 +1,4 @@
-include ../_mixins.pug
-include ../_modules.pug
-include _variable.pug
+//- include ../_mixins.pug
 doctype html
 html(lang="ru")
 	head
@@ -34,7 +32,6 @@ html(lang="ru")
 							li.menu__item: a(href="icon.html").menu__link Иконки
 							li.menu__item: a(href="navigation.html").menu__link Навигация
 							li.menu__item: a(href="image.html").menu__link Изображения
-					//- span.hamburger
 			.header__title
 				.header__images.page__wrap
 					img(src="/img/logo.svg", alt="Логотип БЭМ").header__img
@@ -42,7 +39,11 @@ html(lang="ru")
 					img(src="/img/logo3.svg", alt="Логотип БЭМ").header__img
 			.header__breadcrumb
 				.page__wrap
-					+breadcrumb(breadcrumbs)
+					nav.breadcrumb
+						ul.breadcrumb__lists
+							li.breadcrumb__item: a.breadcrumb__link(href="/") Главная
+							li.breadcrumb__item: a.breadcrumb__link(href="/doc/") Документация
+							li.breadcrumb__item Подтема
 
 		.page__content
 			.page__wrap
