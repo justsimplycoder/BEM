@@ -16,7 +16,8 @@
     "url": "https://github.com/justsimplycoder/BEM"
   },
   "keywords": [
-    "БЭМ", "BEM"
+    "БЭМ",
+    "BEM"
   ],
   "author": "justsimplycoder@gmail.com",
   "license": "ISC",
@@ -58,6 +59,7 @@
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
     "normalize.css": "^8.0.1",
-    "swiper": "^9.3.2"
+    "swiper": "^9.3.2",
+    "tippy.js": "^6.3.7"
   }
 }

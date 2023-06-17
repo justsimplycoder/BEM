@@ -1,12 +1,15 @@
 import menu from './modules/menu.js'
 import tab from './modules/tab.js'
+import tippy from 'tippy.js';
 
 menu();
 tab();
 
+tippy('.tooltip-info', {
+	animation: 'shift-toward-extreme'
+});
+
 (function() {
-
-
 	// Модуль .alert
 	function alertHandler(close) {
 		close.onclick = function (event) {
